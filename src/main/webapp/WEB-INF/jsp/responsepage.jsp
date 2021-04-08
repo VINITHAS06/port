@@ -7,7 +7,7 @@
 <title>Response Page</title>
 </head>
 <body>
-Success
+ABC Coaching Center!
 <h2> ${message }</h2>
 <h3><a href="getallusers"><font color="violet"> Get registered Users</font></a></h3>
 <%-- ${displayuser.id}<br> --%>
