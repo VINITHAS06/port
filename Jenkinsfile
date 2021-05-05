@@ -8,7 +8,7 @@ pipeline {
         
         stage('Checkout') {
             steps {
-            checkout([$class: 'GitSCM', branches: [[name: '*/main']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: '2341d34b-9d78-4a02-a757-107f64f5d8a2', url: 'https://github.com/immersive-induction/credit-service.git']]])
+            checkout(git credentialsId: 'github', url: 'https://github.com/VINITHAS06/port.git')
             }
         }
         
