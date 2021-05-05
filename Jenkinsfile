@@ -8,7 +8,7 @@ pipeline {
         
         stage('Checkout') {
             steps {
-            checkout(git credentialsId: 'github', url: 'https://github.com/VINITHAS06/port.git')
+             sh 'git clone '
             }
         }
         
