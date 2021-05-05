@@ -8,6 +8,7 @@ pipeline {
         
         stage('Checkout') {
             steps {
+             sh 'rm -rf port'
              sh 'git clone https://github.com/VINITHAS06/port.git'
             }
         }
