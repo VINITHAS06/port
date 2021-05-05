@@ -14,7 +14,7 @@ pipeline {
         
         stage ('Build') {
             steps {
-                sh 'mvn clean install -f credit/pom.xml'
+                sh 'mvn clean install'
             }
         }
         
