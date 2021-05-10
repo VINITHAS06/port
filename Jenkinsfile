@@ -20,7 +20,7 @@ pipeline {
 }
     post {
             always {
-               mail to: 'vinitha.92@wipro.com',
+               mail to: 'vinithashanmugam1998@gmail.com',
                  subject: "mailing",
                  body: "jenkinsfile"
             }
