@@ -17,6 +17,14 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
+        stage ('sonar') {
+            steps {
+                sh 'sonar.login.user=admin'
+                sh 'sonar.login.password=admin'
+                sh 'sonar.projectKey=myproject_new'
+                sh 'sonar.projectName=MyProject'
+                sh 'sonar.sources=.'
+                sh 'sonar.java.binaries=target/classes'
 }
     post {
             always {
