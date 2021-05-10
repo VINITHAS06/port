@@ -18,11 +18,10 @@ pipeline {
                 sh 'mvn clean install'
             }
         }
-        post {
+}
+    post {
             always {
                sh 'echo "hello"'
             }
         }
-   
-}
 }
