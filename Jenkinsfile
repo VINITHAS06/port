@@ -1,5 +1,4 @@
 pipeline {
-    
     agent any
     tools{
         maven 'MAVEN_HOME'
@@ -21,7 +20,9 @@ pipeline {
 }
     post {
             always {
-               sh 'echo "hello"'
+               mail to: 'vinitha.92@wipro.com',
+                 subject: "mailing",
+                 body: "jenkinsfile"
             }
         }
 }
