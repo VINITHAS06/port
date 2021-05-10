@@ -28,9 +28,7 @@ pipeline {
             
     post {
             always {
-               mail to: 'vinithashanmugam1998@gmail.com',
-                 subject: "mailing",
-                 body: "jenkinsfile"
+               sh 'echo "hello"'
             }
         }
 }
