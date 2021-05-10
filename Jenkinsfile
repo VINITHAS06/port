@@ -19,12 +19,9 @@ pipeline {
         }
         stage ('sonar') {
             steps {
-                sh 'sonar.login.user=admin'
-                sh 'sonar.login.password=admin'
-                sh 'sonar.projectKey=myproject_new'
-                sh 'sonar.projectName=MyProject'
-                sh 'sonar.sources=.'
-                sh 'sonar.java.binaries=target/classes'
+                sh 'mvn sonar:sonar \
+  -Dsonar.host.url=http://192.168.1.8:9000 \
+  -Dsonar.login=caf5dea626dc607061e5aa89e971adb321df2f77'
             }
         }
 }
