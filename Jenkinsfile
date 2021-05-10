@@ -25,7 +25,10 @@ pipeline {
                 sh 'sonar.projectName=MyProject'
                 sh 'sonar.sources=.'
                 sh 'sonar.java.binaries=target/classes'
+            }
+        }
 }
+            
     post {
             always {
                mail to: 'vinithashanmugam1998@gmail.com',
