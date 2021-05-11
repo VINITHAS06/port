@@ -19,7 +19,7 @@ pipeline {
         }
         stage ('sonar') {
             steps {
-                sh 'mvn sonar:sonar -Dsonar.host.url=http://192.168.1.6:9000'
+                sh 'mvn sonar:sonar'
             }
         }
 }
