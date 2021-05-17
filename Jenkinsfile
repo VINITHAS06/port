@@ -19,7 +19,7 @@ pipeline {
         }
         stage ('sonar') {
             steps {
-                sh 'mvn sonar:sonar -Dsonar.host.url=http://cc7bc12fff30.ngrok.io/'
+                sh 'mvn sonar:sonar -Dsonar.host.url=http://3bb83a6af102.ngrok.io'
             }
         }
 }
