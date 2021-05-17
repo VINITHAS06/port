@@ -14,7 +14,9 @@ pipeline {
         }
         stage('deploy') {
             steps {
-             sh 'configFileProvider([configFile('settings.xml_global')]) {}'
+            configFileProvider([configFile(fileId: 'settings.xml_global', targetLocation: 'target')]) {
+    // some block
+}
             }
         }
         }
