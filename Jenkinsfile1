@@ -12,13 +12,7 @@ pipeline {
              sh 'git clone https://github.com/VINITHAS06/port.git'
             }
         }
-        stage('deploy') {
-            steps {
-            configFileProvider([configFile(fileId: 'settings.xml_global', targetLocation: 'target')]) {
-    // some block
-}
-            }
-        }
+    
          stage('deploy-maven') {
             steps {
             sh 'mvn deploy'
