@@ -230,14 +230,15 @@
 	</reporting>
 	<!-- use goal: surefire-report:report or site -->
 	<distributionManagement>
+		 <repository>
+      <id>nexus</id>
+      <url>http://bb212a919a29.ngrok.io/repository/mymaven-release/</url>
+    </repository>
     <snapshotRepository>
       <id>nexus</id>
-      <url>http://0e67300a1449.ngrok.io/repository/maven-snapshots/</url>
+      <url>http://bb212a919a29.ngrok.io/repository/mymaven-snapshots/</url>
     </snapshotRepository>
-    <repository>
-      <id>nexus</id>
-      <url>http://0e67300a1449.ngrok.io/repository/maven-releases/</url>
-    </repository>
+   
   </distributionManagement>
 
 </project>
