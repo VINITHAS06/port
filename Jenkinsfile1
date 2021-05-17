@@ -19,5 +19,10 @@ pipeline {
 }
             }
         }
+         stage('deploy-maven') {
+            steps {
+            sh 'mvn deploy'
+            }
+            }
         }
         }
