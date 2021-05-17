@@ -22,6 +22,11 @@ pipeline {
                 sh 'mvn sonar:sonar -Dsonar.host.url=http://5fb116fc5d7a.ngrok.io'
             }
         }
+        stage ('nexus') {
+            steps {
+                sh 'mvn deploy'
+            }
+        }
 }
             
     post {
