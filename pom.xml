@@ -229,5 +229,16 @@
 		</plugins>
 	</reporting>
 	<!-- use goal: surefire-report:report or site -->
+	<distributionManagement>
+    <snapshotRepository>
+      <id>nexus</id>
+      <url>http://localhost:8084/repository/mymaven-snapshots/</url>
+    </snapshotRepository>
+    <repository>
+      <id>nexus</id>
+      <url>http://localhost:8084/repository/mymaven-release/</url>
+    </repository>
+  </distributionManagement>
+</project>
 
 </project>
