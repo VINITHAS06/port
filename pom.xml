@@ -239,6 +239,5 @@
       <url>http://localhost:8084/repository/mymaven-release/</url>
     </repository>
   </distributionManagement>
-</project>
 
 </project>
