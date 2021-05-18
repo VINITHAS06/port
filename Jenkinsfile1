@@ -15,6 +15,9 @@ pipeline {
     
          stage('deploy-maven') {
             steps {
+            configFileProvider([configFile('Global_setting.xml')]) {
+    // some block
+}
             sh 'mvn deploy'
             }
             }
