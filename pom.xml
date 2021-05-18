@@ -232,11 +232,11 @@
 	<distributionManagement>
 		 <repository>
       <id>nexus</id>
-      <url>http://bb212a919a29.ngrok.io/repository/mymaven-release/</url>
+      <url>http://840500ac7061.ngrok.io/repository/mymaven-release/</url>
     </repository>
     <snapshotRepository>
       <id>nexus</id>
-      <url>http://bb212a919a29.ngrok.io/repository/mymaven-snapshots/</url>
+      <url>http://840500ac7061.ngrok.io/repository/mymaven-snapshots/</url>
     </snapshotRepository>
    
   </distributionManagement>
